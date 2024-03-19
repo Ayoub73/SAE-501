@@ -1,0 +1,24 @@
+{
+    "menu": [
+        {
+            "name": "ACCUEIL",
+            "link": "/"
+        },
+        {
+            "name": "À PROPOS",
+            "link": "a-propos.html"
+        },
+        {
+            "name": "LIEUX DE VIE",
+            "link": "lieu-de-vie.html"
+        },
+        {
+            "name": "SUR LES MÉDIAS",
+            "link": "sur-les-medias.html"
+        },
+        {
+            "name": "CONTACT",
+            "link": "contact.html"
+        }
+    ]
+}

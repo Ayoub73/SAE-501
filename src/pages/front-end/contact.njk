@@ -1,0 +1,61 @@
+{% set bubble_color = "jaune" %}
+
+{% extends "layouts/front-end/base.njk" %}
+{% set bubble_color = "jaune" %}
+
+{% block title %} Contactez-nous
+{% endblock %}
+
+{% block main %}
+{% include "components/front-end/hero.njk" %}
+<h1 class="text-3xl font-bold mb-4 text-center">Plus d'infos sur la formation?</h1>
+<h1 class="text-3xl font-bold mb-4 text-center">Contactez-nous!</h1>
+
+    <section class="flex justify-center items-center flex-col-reverse lg:flex-row sm:gap-x-10 gap-y-6">
+
+        <form class="w-full max-w-md" method="post" data-form="contact">
+            <div class="mb-6">
+                <label for="firstName" class="block text-sm font-medium text-gray-600">Prénom</label>
+                <input type="text" id="firstName" name="firstname" class="mt-1 p-2 border border-gray-300 rounded-md w-full" required>
+            </div>
+            <div class="mb-6">
+                <label for="lastName" class="block text-sm font-medium text-gray-600">Nom</label>
+                <input type="text" id="lastName" name="lastname" class="mt-1 p-2 border border-gray-300 rounded-md w-full" required>
+            </div>
+            <div class="mb-6">
+                <label for="email" class="block text-sm font-medium text-gray-600">Adresse Email</label>
+                <input type="email" id="email" name="email" class="mt-1 p-2 border border-gray-300 rounded-md w-full" required>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-gray-600">Message</label>
+                <textarea id="message" name="content" class="mt-1 p-2 border border-gray-300 rounded-md w-full" rows="4" required></textarea>
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-600">Je suis</label>
+                <div class="flex items-center">
+                    <label class="inline-flex items-center mr-4">
+                        <input type="radio" name="type" value="not_specified" class="form-radio" checked>
+                        <span class="ml-2">Je ne souhaite pas le préciser</span>
+                    </label>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="radio" name="type" value="etudiant" class="form-radio">
+                        <span class="ml-2">Je suis étudiant</span>
+                    </label>
+                    <label class="inline-flex items-center mr-4">
+                        <input type="radio" name="type" value="parent" class="form-radio">
+                        <span class="ml-2">Parent</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="type" value="autre" class="form-radio">
+                        <span class="ml-2">Autre</span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md">Envoyer</button>
+        </form>
+    </section>
+
+    
+
+
+{% endblock %}
