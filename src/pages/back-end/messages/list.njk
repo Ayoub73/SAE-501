@@ -1,4 +1,7 @@
 {% extends "layouts/back-end/base.njk" %}
+
+{% block title %}Messages{% endblock %}
+
 {% set page_name = "messages" %}
 
 {% import "components/back-end/pagination.njk" as pagination with context %}
@@ -7,7 +10,7 @@
     <div class="bg-white rounded-2xl shadow-md pb-6">
         <header class="mb-1 p-6 pl-8 flex justify-between lg:flex-row flex-col">
             <p class="text-4xl">
-            Liste desmessages
+            Liste des messages
                 <span class="block text-sm">{{ list_messages.count }} éléments au total</span>
             </p>
            
